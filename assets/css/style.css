@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: calc(100% - 330px);
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 21.84px 0;
+}
+
+.header a {
+    font-size: 14px;
+    color: #333;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list ul {
+    display: flex;
+    gap: 60px;
+}
+
+.icons ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.collection-container {
+    padding-top: 40px;
+}
+
+.collection-container .container {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    justify-content: space-between;
+    text-align: center;
+}
+
+.collection-container .container > div {
+    flex: 1; 
+}
+
+.collection-container img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.collection-container h2 {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase; 
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.menu { 
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .list,
+    .hidden {
+        display: none;
+    }
+    .container {
+        width: calc(100% - 30px);
+    }
+    .collection-container .container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .collection-container .container > div {
+        flex: 0 0 calc(50% - 10px);
+    }
+    .menu {
+        display: block;
+    }
+}
